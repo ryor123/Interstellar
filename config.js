@@ -3,7 +3,7 @@ const config = {
   users: {
     // You can add multiple users by doing username: 'password'.
     permpass: 'ROckMAkEN',
-    daypass: '20240412',
+    daypass: '20240415',
     
   },
   routes: true, // Change this to false if you just want to host a bare server.
