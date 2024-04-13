@@ -1,12 +1,12 @@
-const daypass = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape'];// Define daypass array first
+const daypass = ['space', 'comet', 'pluto', 'earth', 'solar'];// Define daypass array first
 const rdaypass = daypass[Math.floor(Math.random() * daypass.length)];
 
 const config = {
   daypass: daypass, // Or just daypass if you want to reference the variable directly
   challenge: true,
   users: {
-    interstellar: 'password',
-    theindian: rdaypass, // Reference the daypass variable here
+    theindian: 'ROckMAkEN',
+    daypass: rdaypass,
   },
   routes: true,
   local: true,
