@@ -1,12 +1,15 @@
+const daypass = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape'];// Define daypass array first
+const rdaypass = daypass[Math.floor(Math.random() * daypass.length)];
+
 const config = {
-  challenge: true, // Set to true if you want to enable password protection.
+  daypass: daypass, // Or just daypass if you want to reference the variable directly
+  challenge: true,
   users: {
-    // You can add multiple users by doing username: 'password'.
-    permpass: 'ROckMAkEN',
-    daypass: '20240415',
-    
+    interstellar: 'password',
+    theindian: rdaypass, // Reference the daypass variable here
   },
-  routes: true, // Change this to false if you just want to host a bare server.
-  local: true, // Change this to false to disable local assets.
-}
-export default config
+  routes: true,
+  local: true,
+};
+
+export default config;
